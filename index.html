@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Text Animation | HTML & CSS</title>
+    <style>
+        *{
+            padding:0;
+            margin:0;
+            box-sizing:border-box;
+            font-family:sans-serif;
+        }
+        html{
+            font-size:65.5%;
+        }
+        body{
+            display:flex;
+            align-items:center;
+            justify-content:center;
+            height:100vh;
+            background-color:black;
+        }
+        .container span{
+           
+            text-transform: uppercase;
+            display:block;
+            width:100%;
+        }
+        .container .text-1{
+            font-size:3rem;
+            color:white;
+            font-weight:bolder;
+            letter-spacing:5px;
+            margin-bottom:12px;
+            background-color:black;
+            position:relative;
+            animation:text 2s 1;
+        }
+        @keyframes text {
+            0%{
+                
+                color:black;
+                margin-bottom:-30px;
+            }
+            30%{
+                letter-spacing:10px;
+                margin-bottom:-30px;
+            }
+            60%{
+                letter-spacing:4px;
+                margin-bottom:-30px;
+            }
+            
+            
+        }
+        .container .text-2{
+            font-size:1.8rem;
+            color:#6ab04c;
+            display:flex;
+            align-items:center;
+            justify-content:center;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <span class="text-1">welcome in</span>
+        <span class="text-2">diamond gym</span>
+    </div>
+</body>
+</html>
